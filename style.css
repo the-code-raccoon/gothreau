@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+header {
+    border: 2px black solid;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.header__container {
+    display: flex;
+    border: 2px green solid;
+    width: 100%;
+    flex-direction: column;
+}
+
+.header__gothreau {
+    font-family: 'Courier Prime', monospace;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.video_player {
+    margin: 40px auto;
+}
+
+.music_player {
+    margin: 20px auto;
+}
