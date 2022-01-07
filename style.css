@@ -41,7 +41,8 @@ header {
 
 #landing__button {
     z-index: -1;
-    position: relative;
+    position: absolute;
+    
 }
 
 .landing__container {
@@ -81,7 +82,7 @@ header {
 }
 
 .landing__triangle--animate {
-    animation: ;
+    animation-delay: 1s;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
