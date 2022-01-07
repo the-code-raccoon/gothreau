@@ -1,13 +1,12 @@
-// var element = document.getElementById("landing__triangle--left");
-// element.classList.remove("");
-// void element.offsetWidth;
-// element.classList.add("");
+function triggerAnimation (s, sa) {
+    var element= document.getElementById(s);
+    element.classList.remove(sa);
+    void element.offsetHeight;
+    element.classList.add(sa);
+}
 
 document.getElementById("landing__button").addEventListener('click', function() {
-    var element1 = document.getElementById("landing__triangle--right");
-    var element2 = document.getElementById("landing__triangle--left");
-    void element1.offsetWidth;
-    void element2.offsetWidth;
-    element1.classList.add("landing__triangle--animate");
-    element2.classList.add("landing__triangle--animate");
+    triggerAnimation("landing__triangle--right", "landing__triangle--right--animate");
+    triggerAnimation("landing__triangle--left", "landing__triangle--left--animate")
+    triggerAnimation("landing__button", "landing__button--animate");
 })
