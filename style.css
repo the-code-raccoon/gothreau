@@ -1,6 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ropa+Sans&display=swap');
 
-header {
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    caret-color: transparent;
+}
+
+html, body {
+    height: 100%;
+}
+
+.home__container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #424874;
+    overflow: hidden;
+}
+
+#home__rect--1 {
+    position: absolute;
+    width: 689px;
+    height: 572px;
+    left: -171px;
+    top: -90px;
+    background: #B7B5E4;
+}
+
+#home__rect--2 {
+    position: absolute;
+    width: 1384px;
+    height: 875px;
+    left: 794px;
+    top: -146px;
+    background: #674EA7;
+}
+
+#home__rect--3 {
+    position: absolute;
+    width: 1037px;
+    height: 744px;
+    left: 1046px;
+    top: 523px;
+    background: #514B61;
+}
+
+#home__image {
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+    max-width: 700px;
+    width: 50%;
+    min-width: 600px;
+}
+
+.home__info__container {
+    /* border: 2px orange solid; */
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 40%;
+    color: white;
+}
+
+.home__info__list {
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+}
+
+.home__info__list h2 {
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home__info__list h1 {
+    font-size: 144px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home__info__list p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.logo {
+    /* border: 2px blue solid; */
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin: 2vw;
+    padding: 5px 10px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    /* border: 2px green solid; */
+    padding: 10px 15px;
+    margin: 2vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.socials__links {
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.socials__links li {
+    /* border: 2px green solid; */
+    padding: 3px;
+    margin: 0.3vw;
+    display: inline-block;
+}
+
+.header__container {
+    border: 2px black solid;
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* header {
     border: 2px black solid;
     margin-top: 30px;
     text-align: center;
@@ -25,4 +166,4 @@ header {
 
 .music_player {
     margin: 20px auto;
-}
+} */
