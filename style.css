@@ -98,19 +98,23 @@ html, body {
     /* border: 2px red solid;    */
 }
 
-.button_stream {
-    /* border: 2px orange solid; */
+.button {
     cursor: pointer;
     width: 160px;
     height: 36px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
-    background-color: #8B69E0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+
+}
+
+.button_stream {
+    background-color: #8B69E0;
+    /* border: 2px orange solid; */
 }
 
 .button_stream a {
@@ -228,7 +232,77 @@ html, body {
     /* line-height: 0.75em; */
 }
 
+.contact__container {
+    /* border: 2px orange solid; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13%;
+    width: 60%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+.contact__title {
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.contact__text {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact__input__div__name-subject {
+    /* border: 2px green solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_submit {
+    color: white;
+    text-transform: uppercase;
+    background-color: #37158C;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input, textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+#contact__input__name, #contact__input__subject {
+    width: 45%;
+}
+
+#contact__input__msg {
+    height: 150px;
+}
+
+
+input[type=text], input[type=email], textarea {
+    /* font-family: 'Inter', sans-serif; */
+    border-radius: 11px;
+    padding: 10px 15px;
+    font-size: 18px;
+    width: 100%;
+    caret-color: black;
+}
 
 /* header {
     border: 2px black solid;
