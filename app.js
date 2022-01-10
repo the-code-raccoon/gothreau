@@ -4,16 +4,15 @@ const musicItems = [
         "name": "grown",
         "releaseMonth": "1",
         "releaseYear": "2022",
-        "artwork": "assets/artworks/grown-cover.jpg",
         "runtime": "2:05",
-        "type": "single"
+        "type": "single",
+        "stream": "https://gothreau.fanlink.to/grown"
     },
     {
         "id": "leave-you-alone",
         "name": "leave you alone",
         "releaseMonth": "12",
         "releaseYear": "2021",
-        "artwork": "assets/artworks/lya-cover.jpg",
         "runtime": "2:40",
         "type": "single"
     },
@@ -22,7 +21,6 @@ const musicItems = [
         "name": "Golden Hour",
         "releaseMonth": "8",
         "releaseYear": "2020",
-        "artwork": "assets/artworks/golden-hour-cover.jpg",
         "runtime": "20:13",
         "type": "project"
     },
@@ -31,7 +29,6 @@ const musicItems = [
         "name": "Isolate",
         "releaseMonth": "11",
         "releaseYear": "2019",
-        "artwork": "assets/artworks/isolate-cover.jpg",
         "runtime": "24:31",
         "type": "project"
     },
@@ -40,7 +37,6 @@ const musicItems = [
         "name": "Sakura",
         "releaseMonth": "4",
         "releaseYear": "2019",
-        "artwork": "assets/artworks/sakura-cover.jpg",
         "runtime": "14:59",
         "type": "project"
     },
@@ -49,7 +45,6 @@ const musicItems = [
         "name": "Pink November 2",
         "releaseMonth": "11",
         "releaseYear": "2018",
-        "artwork": "assets/artworks/pink-november-2-cover.jpg",
         "runtime": "23:47",
         "type": "project"
     },
@@ -58,7 +53,6 @@ const musicItems = [
         "name": "Gambit",
         "releaseMonth": "6",
         "releaseYear": "2018",
-        "artwork": "assets/artworks/gambit-cover.jpg",
         "runtime": "28:18",
         "type": "project"
     },
@@ -67,7 +61,6 @@ const musicItems = [
         "name": "Pink November",
         "releaseMonth": "11",
         "releaseYear": "2017",
-        "artwork": "assets/artworks/pink-november-cover.jpg",
         "runtime": "15:24",
         "type": "project"
     },
@@ -76,21 +69,74 @@ const musicItems = [
         "name": "Cyclical",
         "releaseMonth": "6",
         "releaseYear": "2017",
-        "artwork": "assets/artworks/cyclical-cover.jpg",
         "runtime": "22:36",
         "type": "project"
     }
 
 ]
 
-console.log(musicItemsGrown[4].id);
+var months = new Map();
+months.set("1", "january");
+months.set("2", "february");
+months.set("3", "march");
+months.set("4", "april");
+months.set("5", "may");
+months.set("6", "june");
+months.set("7", "july");
+months.set("8", "august");
+months.set("9", "september");
+months.set("10", "october");
+months.set("11", "november");
+months.set("12", "december");
+
+
 console.log("ass");
 
-var musicContainer = document.getElementById("music__conainter");
+var musicContainer = document.getElementById("music__container");
 
 musicItems.forEach(function (project) {
-    musicContainer.innerHTML = `
-    <div class="music-item "` + project.type + `">
-    ` + ` 
-    `;
+    console.log("did i get here");
+    console.log(musicContainer);
+
+    if (project.type === "single") {
+        musicContainer.innerHTML += `
+        <div class="music-item single">
+            <div class="music-item-inner">
+                <div class="music-item-front">
+                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                </div>  
+                <div class="music-item-back">
+                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                    <div class="music-item-back-info">
+                        <h1>` + project.name + `</h1>
+                        <h2>` + months.get(project.releaseMonth).substring(0, 3) + ` ` + project.releaseYear + `</h2>
+                        <div class="button_stream button">
+                            <a href="` + project.stream + `" target="_blank">stream now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+    } else if (project.type === "project") {
+        musicContainer.innerHTML += `
+        <div class="music-item project">
+            <div class="music-item-inner">
+                <div class="music-item-front">
+                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                </div>  
+                <div class="music-item-back">
+                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                    <div class="music-item-back-info">
+                        <h1>` + project.name + `</h1>
+                        <h2>` + months.get(project.releaseMonth).substring(0, 3) + ` ` + project.releaseYear + `</h2>
+                        <div class="button_stream button">
+                            <a href="` + project.stream + `" target="_blank">stream now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+    }
 })
