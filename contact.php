@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Gothreau | Contact</title>
-    <?php
-        include("contact.php");
-    ?>
 </head>
 <body>
     <div class="page__container">
@@ -25,7 +22,7 @@
                 <ul class="nav__links">
                     <li><a href="about.html">a b o u t</a></li>
                     <li><a href="music.html">m u s i c</a></li>
-                    <li><a href="contact.html">c o n t a c t</a></li>
+                    <li><a href="contact.php">c o n t a c t</a></li>
                 </ul>
             </nav>
 
@@ -50,12 +47,7 @@
                 <input type="text" id="contact__input__subject" name="contactSubject" placeholder="Subject">
             </div>
             <textarea id="contact__input__msg" name="contactMsg" placeholder="Message"></textarea>
-            <div class="submitWrapper">
-                <div class="submitTextWrapper">
-                    <p>SUBMIT</p>
-                </div>
-                <input type="submit" onclick="alert('Submitted!')" value="" class="button button_submit" style="text-align: center;">
-            </div>
+            <input type="submit" onclick="alert('Submitted!')" value="Submit" class="button button_submit">
         </form>
 
     </div>
