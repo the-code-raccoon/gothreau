@@ -52,9 +52,10 @@ html, body {
     position: absolute;
     left: 80px;
     bottom: 0;
-    max-width: 800px;
+    height: 80%;
+    /* max-width: 800px;
     width: 50%;
-    min-width: 600px;
+    min-width: 600px; */
 }
 
 .home__info__container {
