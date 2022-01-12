@@ -111,16 +111,16 @@ musicItems.forEach(function (project) {
         <div class="music-item single">
             <div class="music-item-inner">
                 <div class="music-item-front">
-                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                    <img src="assets/artworks/${project.id}-cover.jpg" style="width:100%; height:100%">
                 </div>  
                 <div class="music-item-back">
-                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                    <img src="assets/artworks/${project.id}-cover.jpg" style="width:100%; height:100%">
                     <div class="music-item-back-title"> 
-                        <h1>` + project.name + `</h1>
+                        <h1>${project.name}</h1>
                     <div>
-                    <h2>` + months.get(project.releaseMonth).substring(0, 3) + ` ` + project.releaseYear + `</h2>
+                    <h2>${months.get(project.releaseMonth).substring(0,3)} ${project.releaseYear}</h2>
                     <div class="button_stream button">
-                        <a href="` + project.stream + `" target="_blank">stream now</a>
+                        <a href="${project.stream}" target="_blank">stream now</a>
                     </div>  
                 </div>
             </div>
@@ -131,19 +131,19 @@ musicItems.forEach(function (project) {
         <div class="music-item project">
             <div class="music-item-inner">
                 <div class="music-item-front">
-                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                    <img src="assets/artworks/${project.id}-cover.jpg" style="width:100%; height:100%">
                 </div>  
                 <div class="music-item-back">
-                    <img src="assets/artworks/` + project.id + `-cover.jpg" style="width:100%; height:100%">
+                    <img src="assets/artworks/${project.id}-cover.jpg" style="width:100%; height:100%">
                     <div class="music-item-back-title"> 
-                        <h1>` + project.name + `</h1>
+                        <h1>${project.name}</h1>
                     <div>
-                    <h2>` + months.get(project.releaseMonth).substring(0, 3) + ` ` + project.releaseYear + `</h2>
+                    <h2>${months.get(project.releaseMonth).substring(0,3)} ${project.releaseYear}</h2>
                     <div class="button_stream button">
-                        <a href="` + project.stream + `" target="_blank">stream now</a>
+                        <a href="${project.stream}" target="_blank">stream now</a>
                     </div>
                     <div class="button_info button">
-                        <a href="` + project.stream + `" target="_blank">MORE INFO</a>
+                        <a href="${project.stream}" target="_blank">MORE INFO</a>
                     </div>
                 </div>
             </div>
