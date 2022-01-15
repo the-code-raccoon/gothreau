@@ -103,8 +103,6 @@ console.log("ass");
 var musicContainer = document.getElementById("music__container");
 
 musicItems.forEach(function (project) {
-    console.log("did i get here");
-    console.log(musicContainer);
 
     if (project.type === "single") {
         musicContainer.innerHTML += `
