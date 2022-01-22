@@ -1,20 +1,42 @@
 {% extends "base.html" %}
 {% block title %}Gothreau{% endblock %}
 {% block content %}
-<img id="home__image" src="../static/assets/homeimage.png">
+<div class="container-fluid" id="home__info__container">
+    <div class="row">
+        <div class="col-lg-6 order-2" style="border: 2px red solid;">
+            <img class="img-fluid" id="home__image" src="../static/assets/homeimage.png">
+        </div>
 
-        <div class="home__info__container">
-            <div class="home__info__project-type">new single</div>
-            <div class="home__info__project-name">grown</div>
-            <div class="home__info__project-info">Lorem ipsum dolor sit amet. 33 voluptatem quos eum maiores adipisci ab nesciunt perferendis.</div>
-            <div class="home__info__project-buttons">
-                <div class="button_stream button">
-                    <a href="https://gothreau.fanlink.to/grown" target="_blank">stream now</a>
-                </div>
+        <div class="col-lg-6 order-1">
+            <div class="row">
+                <h2>new single</h2>
+                <h1>grown</h1>
+                <p>Lorem ipsum dolor sit amet. 33 voluptatem quos eum maiores adipisci ab
+                    nesciunt perferendis.</p>
             </div>
         </div>
+    </div>
+</div>
+
+
+<!-- <div style="border: 2px green solid; height: 50%">
+
+    <img id="home__image" src="../static/assets/homeimage.png">
+
+    <div class="home__info__container">
+        <div class="home__info__project-type">new single</div>
+        <div class="home__info__project-name">grown</div>
+        <div class="home__info__project-info">Lorem ipsum dolor sit amet. 33 voluptatem quos eum maiores adipisci ab
+            nesciunt perferendis.</div>
+        <div class="home__info__project-buttons">
+            <div class="button_stream button">
+                <a href="https://gothreau.fanlink.to/grown" target="_blank">stream now</a>
+            </div>
+        </div>
+    </div>
+</div> -->
 {% endblock %}
-    
+
 <!-- <div class="video_player">
     <object data='https://www.youtube.com/embed/aN2B4BhSKf8'width='800px' height='450px'></object>
 </div>

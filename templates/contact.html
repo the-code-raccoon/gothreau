@@ -3,7 +3,7 @@
 {% block title %}Gothreau | Contact{% endblock %}
 
 {% block content %}
-<form action="" method="POST" class="contact__container">
+<!-- <form action="" method="POST" class="contact__container">
     <div class="contact__title">Contact</div>
     <div class="contact__text">Lorem ipsum dolor sit amet. 33 voluptatem quos eum maiores adipisci ab nesciunt perferendis. </div>
     <input type="email" id="contact__input__email" name="contactEmail" placeholder="Email">
@@ -18,6 +18,34 @@
         </div>
         <input type="submit" onclick="alert('Submitted!')" value="" class="button button_submit" style="text-align: center;">
     </div>
+</form> -->
+
+<form action="" method="POST" style="border: 2px orange solid">
+    <!-- <div class="contact__title">Contact</div>
+    <div class="contact__text">Lorem ipsum dolor sit amet. 33 voluptatem quos eum maiores adipisci ab nesciunt perferendis. </div> -->
+    <div class="form-group">
+        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+    </div>
+
+    <!-- <div class="contact__input__div__name-subject">
+        <input type="text" id="contact__input__name" name="contactName" placeholder="Name">
+        <input type="text" id="contact__input__subject" name="contactSubject" placeholder="Subject">
+    </div>
+    <textarea id="contact__input__msg" name="contactMsg" placeholder="Message"></textarea>
+    <div class="submitWrapper">
+        <div class="submitTextWrapper">
+            <p>SUBMIT</p>
+        </div>
+        <input type="submit" onclick="alert('Submitted!')" value="" class="button button_submit" style="text-align: center;">
+    </div> -->
 </form>
 {% endblock %}
 
