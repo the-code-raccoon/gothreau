@@ -1,20 +1,26 @@
 {% extends "base.html" %}
 {% block title %}Gothreau{% endblock %}
 {% block content %}
-<div class="container-fluid" id="home__info__container">
-    <div class="row">
-        <div class="col-lg-6 order-2" style="border: 2px red solid;">
+<div class="container" id="home__info__container">
+    <div class="row" id="home-row">
+        <div class="col col-lg-6 order-lg-2" id="home-info-col">
+            <!-- <div id="home__info"> -->
+                <div class="row" style="border: 2px black solid">
+                    <h2>new single</h2>
+                </div>
+                <div class="row" style="border: 2px black solid">
+                    <h1>grown</h1>
+                </div>
+                <div class="row" style="border: 2px black solid">
+                    <p>Lorem ipsum dolor sit amet. 33 voluptatem quos eum maiores adipisci ab
+                        nesciunt perferendis.</p>
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="col-lg-6 order-lg-1" id="home-img-col" style="border: 2px red solid;">
             <img class="img-fluid" id="home__image" src="../static/assets/homeimage.png">
         </div>
 
-        <div class="col-lg-6 order-1">
-            <div class="row">
-                <h2>new single</h2>
-                <h1>grown</h1>
-                <p>Lorem ipsum dolor sit amet. 33 voluptatem quos eum maiores adipisci ab
-                    nesciunt perferendis.</p>
-            </div>
-        </div>
     </div>
 </div>
 
