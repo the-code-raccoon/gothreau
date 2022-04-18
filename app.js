@@ -98,15 +98,12 @@ months.set("11", "november");
 months.set("12", "december");
 
 
-console.log("ass");
-
-var musicContainer = document.getElementById("music__container");
+const musicContainer = document.getElementById("music__container");
 
 musicItems.forEach(function (project) {
-    console.log("did i get here");
-    console.log(musicContainer);
-
     if (project.type === "single") {
+      // let single = document.createElement('div');
+      // single.classList.
         musicContainer.innerHTML += `
         <div class="music-item single">
             <div class="music-item-inner">
